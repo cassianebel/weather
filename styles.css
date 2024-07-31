@@ -1,0 +1,68 @@
+body {
+  color: #712dff;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  background: linear-gradient(0deg, #ffffff, #00c5ff, #2a00ac, #000000);
+  background-size: 200% 200%;
+  background-position: 50% -100%;
+  transition: background 3s;
+}
+.night {
+  color: #874dff;
+  background-position: 50% -200%;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.weather {
+  margin-top: 50px;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 200;
+}
+#icon {
+  font-size: 14rem;
+  color: #fff;
+}
+.temp {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.c,
+.f {
+  transition: all 0.3s;
+}
+.big {
+  font-size: 5rem;
+  font-weight: 700;
+}
+.location {
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.spin {
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
